@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zippy - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo"><i class="fas fa-utensils"></i>zippy</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="speciallity.html">speciality</a>
+            <a href="popular.html">popular</a>
+            <a href="gallery.html">gallery</a>
+           
+             <a href="about.html">About Us</a>
+            <a href="login.php">account</a>
+                <a href="cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </a>
+        </nav>
+    </header>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      color: #e74c3c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a {
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      color: #e74c3c;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 5%;
+      background-color: #fdfdfd;
+      min-height: 100vh; /* 👈 Makes the section take at least full viewport height */
+    
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 600px;
+      padding: 2rem;
+    }
+
+    .about-text h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-text h3 {
+      font-size: 1.8rem;
+      color: #e74c3c;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+      font-size: 2.1rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .about-img {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 2rem;
+      text-align: center;
+      
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 2rem 5%;
+      text-align: center;
+    }
+
+    .footer .btn {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer .btn:hover {
+      text-decoration: underline;
+    }
+
+    .credit span {
+      color: #e74c3c;
+    }
+    .about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+
+ 
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-img">
+      <img src="OFD" alt="About Zippy">
+      <!-- Make sure this image exists in your project folder: images/about-food.jpg -->
+    </div>
+    <div class="about-text">
+      <h1 class="heading"> About <span> Zippy </span> </h1>
+      <h3>Delicious food, Delivered fast.</h3>
+      <p>
+        Zippy is India’s leading food delivery platform. With a wide selection of restaurants, fast delivery, and reliable service, we’re here to make your food cravings a thing of the past. Whether you’re ordering from your favorite local spot or discovering something new, Zippy delivers happiness in every bite.
+      </p>
+    </div>
+  </section>
+
+   <!-- Footer -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="btn">facebook</a>
+            <a href="#" class="btn">twitter</a>
+            <a href="#" class="btn">instagram</a>
+        </div>
+        <h1 class="credit">Created by <span>Web Guru</span> | All rights reserved</h1>
+    </section>
+
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

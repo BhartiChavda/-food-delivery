@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zippy - Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .disabled-link {
+            pointer-events: none;
+            color: gray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Zippy</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="order.html">order</a>
+            <a href="login.html">account </a>
+            <a href="cart.html"> cart</a>
+        </nav>
+    </header>
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+        <h1 class="heading"> <span>order</span> now </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/order-img.jpg" alt="Order Image">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="inputBox">
+                    <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required
+                        title="Please enter a valid 10-digit mobile number">
+                    <input type="text" placeholder="Food Name" required>
+                </div>
+
+                <textarea placeholder="Address" cols="30" rows="10" required></textarea>
+
+                <input type="submit" value="Order Now" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="btn">facebook</a>
+            <a href="#" class="btn">twitter</a>
+            <a href="#" class="btn">instagram</a>
+        </div>
+        <h1 class="credit">Created by <span>Zippy</span> | All rights reserved</h1>
+    </section>
+
+    <!-- Scroll top button -->
+    <a href="#order" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
